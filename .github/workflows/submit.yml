@@ -1,0 +1,26 @@
+name: Submit Application
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  submit-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install libraries
+      run: pip install requests
+
+    - name: Run Submission Script
+      env:
+        B12_SIGNING_SECRET: ${{ secrets.B12_SIGNING_SECRET }}
+      run: python submit_application.py
