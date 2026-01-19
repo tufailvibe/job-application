@@ -10,7 +10,7 @@ YOUR_NAME = "MOHD TUFAIL KHAN"
 YOUR_EMAIL = "tufailkhan.contact@gmail.com"
 # Since you don't have a resume, we are using a placeholder.
 # The application will send successfully, but there is no real resume attached.
-RESUME_LINK = "https://linkedin.com/in/placeholder" 
+RESUME_LINK = "https://drive.google.com/file/d/1X2PSKgeCuhbJMocxM0gET0pmuiQUpwqX/view?usp=sharing" 
 # --------------------
 
 def main():
